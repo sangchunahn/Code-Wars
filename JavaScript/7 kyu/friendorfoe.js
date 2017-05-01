@@ -4,7 +4,7 @@
 
 // Ex: Input = ["Ryan", "Kieran", "Jason", "Yous"], Output = ["Ryan", "Yous"]
 
-// Solution:
+// Solutions:
 
 function friend(friends){
   var word = [];
@@ -17,4 +17,8 @@ function friend(friends){
       } 
   }
   return final
+}
+
+function friend(friends){
+  return friends.filter(value => value.length === 4);
 }
