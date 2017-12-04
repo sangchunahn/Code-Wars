@@ -28,6 +28,14 @@ function add(initNum) {
   return addNum;
 };
 
+// additional 
+
+var add = function(n) {
+  const f = x => add(n + x)
+  f.valueOf = () => n
+  return f;
+}
+
 add(1); // 1
 add(1); // 1
 add(1)(2); // 3
